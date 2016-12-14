@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>03 - CSS Variables</title>
+
+	<link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+
+	<h1>Update CSS Variables with <span class="highlight">JS</span>!</h1>
+
+	<div class="controls">
+		<label class="controls__spacing-label">
+			Spacing <input type="range" name="controls__spacing" min="10" max="200" value="10" data-sizing="px">
+		</label>
+		<label class="controls__blur-label">
+			Blur <input type="range" name="controls__blur" min="0" max="25" value="10" data-sizing="px">
+		</label>
+		<label class="controls__base-label">
+			Base Color <input type="color" name="controls__base" value="#B4D455">
+		</label>
+	</div>
+
+	<img src="images/image.jpg" alt="Altered Image Using the Controls" class="image" />
+
+	<script href="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+/**
+ *	01 - JavaScript Drum Kit
+ *	by Mark McMurray
+ */
+
+ html {
+ 	font-size: 16px;
+ 	background-image: url(../images/background.jpg);
+ 	background-position: center;
+ 	background-size: cover;
+ }
+
+ html, body {
+ 	margin: 0;
+ 	padding: 0;
+  	font-family: sans-serif;
+ }
+
+ .drum-kit {
+ 	display: flex;
+ 	flex: 1;
+	min-height:100vh;
+	align-items: center;
+	justify-content: center;
+ }
+
+ .drum-kit__key {
+ 	width: 100px;
+ 	margin: 5px;
+ 	border: 2px solid #fff;
+ 	border-radius: 5px;
+ 	text-align: center;
+ 	background: rgba(255,255,255,.5);
+ 	transition: all .07s;
+ }
+
+ .drum-kit__key--playing {
+	transform: scale(1.1);
+	border-color:#ffc600;
+	box-shadow: 0 0 10px #ffc600;
+ }
+
+ kbd {
+ 	display: block;
+ 	font-size: 4rem;
+ 	line-height: 4rem;
+ }
+
+ .drum-kit__sound {
+ 	display: block;
+ 	line-height: 2rem;
+ 	text-transform: uppercase;
+ }

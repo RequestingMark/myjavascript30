@@ -1,0 +1,63 @@
+/**
+ *	02 - JS + CSS Clock
+ *	by Mark McMurray
+ */
+
+html {
+  background:#018DED url(../images/background.jpg);
+  background-size:cover;
+  font-family:'helvetica neue';
+  text-align: center;
+  font-size: 10px;
+}
+
+body {
+  font-size: 2rem;
+  display:flex;
+  flex:1;
+  min-height: 100vh;
+  align-items: center;
+}
+
+ .clock {
+ 	position: relative;
+ 	width: 30rem;
+ 	height: 30rem;
+ 	margin: 20rem auto;
+ 	border: 2rem solid #000;
+ 	border-radius: 50%;
+ 	padding: 2rem;
+ }
+
+ .clock__face {
+ 	position: relative;
+ 	width: 100%;
+ 	height: 100%;
+ }
+
+ .clock__hand {
+	width:50%;
+	height:6px;
+	background:black;
+	position: absolute;
+	top:50%;
+	transform-origin: 100%;
+	transform: rotate(90deg);
+	transition: all 0.05s;
+	transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+ }
+
+ .clock__hand--hour {
+ 	position: absolute;
+
+ }
+
+ .clock__hand--minute {
+ 	position: absolute;
+
+ }
+
+ .clock__hand--second {
+ 	position: absolute;
+
+ }

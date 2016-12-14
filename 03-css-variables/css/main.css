@@ -1,0 +1,31 @@
+/**
+ *	02 - JS + CSS Clock
+ *	by Mark McMurray
+ */
+
+:root {
+	--spacing: 10px;
+	--blur: 10px;
+	--base: #B4D455;
+}
+
+html {
+
+}
+
+body {
+	height: 100vh;
+	text-align: center;
+	background-image: url(../images/background.jpg);
+	background-size: cover;
+}
+
+.highlight {
+	color: var(--base);
+}
+
+img {
+	padding: var(--spacing);
+	background: var(--base);
+	filter: blur(var(--blur));
+}
