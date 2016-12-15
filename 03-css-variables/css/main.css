@@ -9,10 +9,6 @@
 	--base: #B4D455;
 }
 
-html {
-
-}
-
 body {
 	height: 100vh;
 	text-align: center;
@@ -24,7 +20,13 @@ body {
 	color: var(--base);
 }
 
-img {
+.controls {
+	margin-bottom: 75px;
+}
+
+.image {
+	width: 100%;
+	max-width: 600px;
 	padding: var(--spacing);
 	background: var(--base);
 	filter: blur(var(--blur));
