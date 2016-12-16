@@ -1,0 +1,99 @@
+/**
+ *	05 - Flex Panel Gallery
+ *	by Mark McMurray
+ */
+
+html {
+	box-sizing: border-box;
+	font-family: 'helvetica neue';
+	font-size: 16px;
+	font-weight: 200;
+}
+
+body {
+	margin: 0;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+.panels {
+	display: flex;
+	min-height: 100vh;
+}
+
+.panels__panel {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	justify-content: center;
+	color: #fff;
+	text-align: center;
+	background-position: center center;
+	background-size: cover;
+	box-shadow:inset 0 0 0 5px rgba(255,255,255,0.1);
+	transition:
+		font-size 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+		flex 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+		background 0.2s;
+}
+
+.panels__panel > *:first-child {
+	transform: translateY(-100%);
+}
+
+.panels__panel--active > *:first-child {
+	transform: translateY(0);
+}
+
+.panels__panel > *:last-child {
+	transform: translateY(100%);
+}
+
+.panels__panel--active > *:last-child {
+	transform: translateY(0);
+}
+
+.panels__panel:nth-child(1) {
+	background-image: url(../images/troll.jpg);
+}
+
+.panels__panel:nth-child(2) {
+	background-image: url(../images/record.jpg);
+}
+
+.panels__panel:nth-child(3) {
+	background-image: url(../images/santa.jpg);
+}
+
+.panels__panel:nth-child(4) {
+	background-image: url(../images/shoes.jpg);
+}
+
+.panels__panel:nth-child(5) {
+	background-image: url(../images/pinata.jpg);
+}
+
+.panels__panel--open {
+	flex: 5;
+	font-size:40px;
+}
+
+.panels__word {
+	display: flex;
+	flex: 1 0 auto;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	margin: 0;
+	font-family: 'Amatic SC', cursive;
+	font-size: 2em;
+	text-shadow:0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+	text-transform: uppercase;
+	transition: transform 0.5s;
+}
+
+.panels__word:nth-child(2) {
+	font-size: 4em;
+}
